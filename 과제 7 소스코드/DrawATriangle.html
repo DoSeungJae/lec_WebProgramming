@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id=""myCanvas" width="200" height="100"
+        style="border:1px solid #dedede;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+
+
+    <script>
+        function fill(){
+            var canvas=document.getElementById('myCanvas');
+            if(canvas.getContext){
+                var ctx=canvas.getContext('2d');
+                ctx.beginPath();
+                ctx.moveTo(75,50);
+                ctx.moveTo(100,75);
+                ctx.linkTo(100,75);
+                ctx.lineTo(100,25);
+                ctx.fill();
+            }
+        }
+
+        fill()
+    </script>
+    </body>
+</html>

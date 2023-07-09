@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Functions Static Variable</h1>
+
+        <script>
+            function foo(){
+                if(typeof foo.counter=='undefined'){
+                    foo.counter=0;
+
+                }
+
+                foo.counter+=1;
+                return foo.counter;
+            }
+
+            document.write(foo()+'<br>')
+            document.write(foo()+'<br>')
+            document.write(foo()+'<br>')
+            document.write(foo()+'<br>')
+
+            document.write(foo.counter+'<br>')
+            
+
+        </script>
+
+    </body>
+</html>

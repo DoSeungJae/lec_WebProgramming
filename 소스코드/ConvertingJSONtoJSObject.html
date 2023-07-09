@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html>
+    <body>
+        <h2> Create Object from JSON String</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            let emp=[
+                {"firstName" : "John","lastName":"Doe"},
+                {"firstName":"Anna","lastName":"Smith"},
+                {"firstName":"Peter","lastName":"Jones"}
+            ]
+            let r=''
+
+            let text=JSON.stringify(emp);
+
+            r+=`<h3> typeof text is ${typeof text} <br> value of text is ${text}</h3>`
+
+
+            let obj=JSON.parse(text);
+            r+=`<h3> typeof obj is ${typeof obj} <br> value of obj is ${obj}
+                </h3>`
+            
+                let recovered = JSON.stringify(obj);
+                r+=`<h3> typeof recovered is ${typeof recovered} <br> value of text is ${recovered}</h3>`
+                document.getElementById("demo").innerHTML=r;
+                
+        </script>
+
+    </body>
+ </html>

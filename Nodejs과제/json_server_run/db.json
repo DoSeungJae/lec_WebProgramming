@@ -1,0 +1,45 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "HTML",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "content": "CSS",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "content": "Javascript",
+      "completed": true
+    }
+  ],
+  "users": [
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ]
+}

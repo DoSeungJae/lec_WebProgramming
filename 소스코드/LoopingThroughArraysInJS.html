@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaSciprt For Various Loop</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            const arr=['mon','daddy','ant'];
+            let r=`the contents of array : [${arr}]<br><br>`
+
+            r+=`기본 for문<hr>`
+            for(let i =0;i<arr.length;i++){
+                r+=`${i}, ${arr[i]} <br>`
+            }
+
+            r+=`<br><br> for in 문(해당 배역 인덱스값 전달)<hr>`
+            for(const i in arr){
+                r+=`${i}, ${arr[i]} <br>`
+            }
+
+            r+=`<br><br><br> for of 문 (값을 전달)<hr>`
+            for(const i of arr){
+                r+=`${i}<br>`
+
+
+            }
+
+            r+=`<br><br><br> for each 콜백 함수에 값, 인덱스 전달<hr>`
+            arr.forEach(function(value,i){
+                r+=`${i},${arr[i]} <br>`
+            });
+
+
+            document.getElementById('demo').innerHTML=r;
+
+        </script>
+    </body>
+</html>
